@@ -1,0 +1,34 @@
+:root {
+  --container-max-widht: 1820px;
+  --container-padding: 110px;
+
+  --black: #000;
+  --bright-black: #333;
+  --gray: #666;
+  --bright-gray: #999;
+  --pink: #D1A9F0;
+  --dark-pink: #C283F3;
+  --purple: #9D5CD0;
+  --dark-purple: #7943A4;
+  --green: #30BF39;
+  --aqua: #26A5E4;
+  --red: #D11616;
+  --bright-gray-more: #CACACA;
+  --light-gray: #ECECEC;
+  --white: #ffffff;
+
+  --small-duration: .3s;
+  --click-duration: .05s
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --container-padding: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --container-padding: 15px;
+  }
+}

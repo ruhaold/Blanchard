@@ -1,0 +1,60 @@
+.checkbox-text {
+  position: relative;
+  padding-left: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.checkbox-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--white);
+  transform: translateY(-50%);
+}
+
+.checkbox-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/check-ellips.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.checkbox:checked+.checkbox-text::after {
+  opacity: 1;
+}
+
+.checkbox:focus-visible+.checkbox-text {
+  color: var(--dark-pink);
+}
+
+.checkbox:focus-visible+.checkbox-text::before {
+  border-color: var(--dark-pink);
+}
+
+.checkbox:focus-visible+.checkbox-text {
+  color: var(--dark-pink);
+}
+
+.checkbox:hover+.checkbox-text {
+  color: var(--white);
+}
+
+.checkbox:hover+.checkbox-text::before {
+  border-color: var(--dark-pink);
+}
+
+.checkbox:active+.checkbox-text {
+  color: var(--dark-pink);
+}

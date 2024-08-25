@@ -1,0 +1,39 @@
+.catalog__container {
+  padding-bottom: 80px;
+}
+
+.catalog__text {
+  margin-bottom: 38px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media (max-width: 1280px) {
+  .catalog__container {
+    padding-bottom: 76px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .catalog__list {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .catalog__container {
+    padding-bottom: 50px;
+  }
+
+  .catalog__text {
+    margin-bottom: 30px;
+  }
+
+  .catalog__list {
+    gap: 30px;
+  }
+}

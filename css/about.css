@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+  .about__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
